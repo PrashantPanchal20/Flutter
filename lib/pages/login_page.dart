@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:my_app/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -47,7 +48,7 @@ class LoginPage extends StatelessWidget {
                     child: Text("Login"),
                     style: TextButton.styleFrom(),
                     onPressed: () {
-                      print("HI Prashant");
+                      Navigator.pushNamed(context, MyRoutes.homeRoutes);
                     },
                   )
                 ],
